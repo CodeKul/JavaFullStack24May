@@ -12,11 +12,17 @@ public class OperatorsDemo {
         int i = 10;
         int j = 7;
 
-        double k= i/j;
+        double k=  (double) i/j;
 //        int a = i%j;
 
+        double a = 10;
+        double b = 7;
+
+        double c = a/b;
+        System.out.println(c);
+
 //        System.out.println(a);
-        System.out.println(k);
+//        System.out.println(k);
 
 //        i = i+1;
 //        System.out.println(i++);11(12)
@@ -38,10 +44,10 @@ public class OperatorsDemo {
 //
 //        System.out.println(a | b);
 
-        int a =10;
-        int b = 20;
-        System.out.println(b>a && a<b);
-        System.out.println(a>b || a>b);
+//        int a =10;
+//        int b = 20;
+//        System.out.println(b>a && a<b);
+//        System.out.println(a>b || a>b);
 
     }
 }
