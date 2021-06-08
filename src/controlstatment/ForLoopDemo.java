@@ -20,6 +20,7 @@ public class ForLoopDemo {
         arr[3] = 40;
 //        arr[4] = 50;
 
+
         System.out.println(arr[0]);
         System.out.println(arr[1]);
         System.out.println(arr[2]);
@@ -39,6 +40,7 @@ public class ForLoopDemo {
             System.out.println(i);
         }
 
+
         System.out.println();
 
         ArrayList<Integer> list = new ArrayList<>();
@@ -46,13 +48,15 @@ public class ForLoopDemo {
         list.add(20);
         list.add(30);
 
+        System.out.println(list);
         //for each loop, it is launch in java 8
         list.forEach(s->{
+
             System.out.println(s);
         });
 
         //method reference
-        list.forEach(System.out::println);
+//        list.forEach(System.out::println);
 
 
 
