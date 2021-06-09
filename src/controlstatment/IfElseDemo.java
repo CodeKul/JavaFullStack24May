@@ -29,13 +29,23 @@ public class IfElseDemo {
             System.out.println("d is greater");
         }
 
-
-        int i = 10;
-        if (i > 0) {
-            System.out.println("100");
-        } else {
-            System.out.println("0");
+        int i=1;
+        if(i==1){
+            System.out.println("one");
+        }else if(i==2){
+            System.out.println("Two");
+        } else if(i==3){
+            System.out.println("Three");
+        }else {
+            System.out.println("Default");
         }
+
+//        int i = 10;
+//        if (i > 0) {
+//            System.out.println("100");
+//        } else {
+//            System.out.println("0");
+//        }
 
 
         String str = i > 0 ? "+ve" : "-ve";
