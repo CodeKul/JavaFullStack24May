@@ -15,7 +15,7 @@ public class ThisDemo {
 
 
     public ThisDemo(int id,String name,String address){//local
-        this();
+//        this();
         this.id = id;
         this.name = name;
         this.address = address;
@@ -25,6 +25,7 @@ public class ThisDemo {
     }
 
     public ThisDemo(){
+        this(1,"name","pune");
         System.out.println("In default const");
     }
 
@@ -39,6 +40,7 @@ public class ThisDemo {
     }
     public static void main(String[] args) {
         ThisDemo obj = new ThisDemo(1,"Akash","Pune");
+        ThisDemo obj1 = new ThisDemo();
         obj.display();
     }
 }
