@@ -26,14 +26,15 @@ public class ConstructorDemo {
         System.out.println("name ->"+name+" id->"+id);
     }
 
-    public ConstructorDemo(int i){
-
+    private ConstructorDemo(int i){
+        this();
     }
 
     public ConstructorDemo(){
+//        this(4);
     }
     public static void main(String[] args) {
-        ConstructorDemo obj = new ConstructorDemo(9);
+        ConstructorDemo obj = new ConstructorDemo();
         obj.show();
     }
 }

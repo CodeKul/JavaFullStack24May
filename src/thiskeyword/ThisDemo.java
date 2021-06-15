@@ -35,8 +35,8 @@ public class ThisDemo {
 
 
     public void display(){
-//        StaticDemo.show();
         this.show();
+//        StaticDemo.show();
     }
     public static void main(String[] args) {
         ThisDemo obj = new ThisDemo(1,"Akash","Pune");
