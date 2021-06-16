@@ -1,0 +1,26 @@
+Throwable
+
+  Exception(Exception can be handled) -
+              -IOException
+                -FileNotFoundException
+              -SQLException
+              -ClassNotFoundException
+              -RunTimeException ->
+                                NumberFormatException
+                                ArithmeticException
+                                NullPointerException
+                                IndexOutOfBoundException
+                                                ArrayIndexOutOfBoundException
+                                                StringIndexOutOfBoundException
+
+
+  Error(Error can not be handled)
+   - StackOverFlowError
+   - OutOfMemoryError
+
+
+
+
+
+
+

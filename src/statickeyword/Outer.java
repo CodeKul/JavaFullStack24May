@@ -5,10 +5,10 @@ public class Outer {
     int id = 1;
     String name = "Suhas";
 
-    static class Inner {
+     static class Inner {
 
         int id = 2;
-        static String name = "Ravi";
+         static String name = "Ravi";
     }
 
 }
@@ -19,7 +19,7 @@ class MainStatic {
         Outer outer = new Outer();
         System.out.println(outer.id);
 
-//        Outer.Inner inner = outer.new Inner();
+//        Outer.Inner inner =outer.new Inner();
 //        System.out.println(inner.name);
 
         Outer.Inner inner = new Outer.Inner();
