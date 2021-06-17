@@ -1,11 +1,11 @@
 Throwable
 
-  Exception(Exception can be handled) -
+  Exception(Exception can be handled)(checked ex) -
               -IOException
                 -FileNotFoundException
               -SQLException
               -ClassNotFoundException
-              -RunTimeException ->
+              -RunTimeException(unChecked Ex) ->
                                 NumberFormatException
                                 ArithmeticException
                                 NullPointerException

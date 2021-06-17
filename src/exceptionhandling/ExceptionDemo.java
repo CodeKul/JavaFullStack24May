@@ -9,7 +9,7 @@ public class ExceptionDemo {
         try {
             String str =null;
             System.out.println(str.length());
-        }catch (Throwable exception){
+        }catch (NullPointerException exception){
             System.out.println(exception);
         }
 
