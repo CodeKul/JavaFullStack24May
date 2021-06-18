@@ -35,6 +35,8 @@ public class NestedExDemo {
             System.out.println(nullPointerException);
         } catch (Exception e){
             System.out.println("e"+e);
+        } finally {
+            System.out.println("In finally");
         }
 
         System.out.println("Hii");
