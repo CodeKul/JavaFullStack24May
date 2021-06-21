@@ -44,12 +44,12 @@ public class NestedExDemo {
         System.out.println("Hii");
 
 
-//        File file = new File("test.txt");
-//        try {
-//            FileOutputStream fileOutputStream = new FileOutputStream(file);
-//        } catch (FileNotFoundException fileNotFoundException) {
-//            fileNotFoundException.printStackTrace();
-//        }
+        File file = new File("test.txt");
+        try {
+            FileOutputStream fileOutputStream = new FileOutputStream(file);
+        } catch (FileNotFoundException fileNotFoundException) {
+            fileNotFoundException.printStackTrace();
+        }
 
 
     }

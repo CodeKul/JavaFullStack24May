@@ -1,6 +1,7 @@
 package exceptionhandling;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class ExceptionDemo {
 
@@ -16,6 +17,7 @@ public class ExceptionDemo {
         try {
             int i=10;
             int j = i/0;
+
         }catch (ArithmeticException e){
             System.out.println();
         }
