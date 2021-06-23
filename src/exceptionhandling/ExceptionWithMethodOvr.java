@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 public class ExceptionWithMethodOvr {
 
-    public void show() throws Exception  {
+    public void show() throws Exception{
         System.out.println("In Show");
     }
 
@@ -42,3 +42,7 @@ class MainMethodOvr{
         obj.show();
     }
 }
+
+//1. If parent class declare no exception then in child class we declare only unchecked exception
+//2. If parent class declare exception then in child class we declare same exception
+//2. If parent class declare exception then in child class we declare child exception
