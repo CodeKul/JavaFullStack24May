@@ -4,7 +4,7 @@ interface MarkerInterface{
 }
 
 
-public class MyMarkerClass implements MarkerInterface {
+public class MyMarkerClass {
 
     public void show(){
         System.out.println("In Show ");

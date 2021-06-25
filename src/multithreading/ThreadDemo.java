@@ -32,7 +32,7 @@ class Hii implements Runnable{
 class Hello extends Thread{
 
     @Override
-    public void run() {
+    public void run()  {
         for (int i=1;i<=5;i++){
             System.out.println("Hello");
             try {
@@ -42,6 +42,12 @@ class Hello extends Thread{
             }
         }
     }
+
+    public void show() throws InterruptedException{
+        Thread.sleep(500);
+    }
+
+
 }
 
 //new => when you create object of thread and before invocation of start().
