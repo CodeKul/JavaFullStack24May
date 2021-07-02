@@ -34,7 +34,7 @@ public class ConstructorDemo {
 //        this(4);
     }
     public static void main(String[] args) {
-        ConstructorDemo obj = new ConstructorDemo();
+        ConstructorDemo obj = new ConstructorDemo(4);
         obj.show();
     }
 }

@@ -5,24 +5,24 @@ public class ProducerConsumer {
 // producer consumer problem
     int num;
 
-    boolean flag = false;
+    boolean flag = true;
 
     public synchronized void set(int num){
-        if(flag){
+        if(!flag){
             try {
                 wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }
-        System.out.println("Set:"+num);
         this.num =  num;
+        System.out.println("Set:"+num);
         flag = true;
         notify();
     }
 
     public synchronized void get(){
-        if(!flag){
+        if(flag){
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -71,6 +71,7 @@ class Consumer implements Runnable{
 
     @Override
     public void run() {
+
         while (true){
             producerConsumer.get();
             try {
