@@ -2,22 +2,29 @@ package filehandling;
 
 import java.io.*;
 
+//Byte Stream
+//Character stream
+
 public class FileHandlingDemo {
     public static void main(String[] args) {
 
         File file = new File("FHDemo.txt");
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);
+
             String str = "Wel-Come to India";
             byte[] bt = str.getBytes();
-            fileOutputStream.write(bt);
 
+            fileOutputStream.write(bt);
+//uiiyiu
             System.out.println("saved..!");
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
-        } catch (IOException e) {
+
+        }  catch (IOException e) {
             e.printStackTrace();
         }
+//        finally {
+//            fileOutputStream.close();
+//        }
 
 
         try {
@@ -27,8 +34,6 @@ public class FileHandlingDemo {
                 System.out.print((char) i);
                 i = fileInputStream.read();
             }
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
