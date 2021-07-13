@@ -18,7 +18,7 @@ public class FileHandlingDemo {
             fileOutputStream.write(bt);
 //uiiyiu
             System.out.println("saved..!");
-
+            System.out.println(file.length());
         }  catch (IOException e) {
             e.printStackTrace();
         }
