@@ -20,7 +20,16 @@ Throwable
 
 
 
+                                    iterable(I)
 
+                                    collection(I)
 
+   List(I)                             queue (I)                              set (I)
+                                      Priority Queue(C)                           HashSet(C)
+                                    Deque(I)                                      LinkedHashSet(C)
+                                    ArrayDeque(C)                            SortedSet(I)
+Arraylist(C)                                                                   Treeset(C)
+LinkedList(C)
+Vector(C)
 
 
