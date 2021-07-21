@@ -9,7 +9,7 @@ public class Swimming implements SportInterface,Sport2Interface{
 
 
     public static void main(String[] args) {
-        Swimming obj = new Swimming();
+       SportInterface obj = new Swimming();
         obj.play();
     }
 }
