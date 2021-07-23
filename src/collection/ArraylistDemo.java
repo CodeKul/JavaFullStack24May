@@ -24,6 +24,10 @@ public class ArraylistDemo {
         list.add(30);
         list.add(40);
 
+        for(Integer i:list){
+            System.out.println(i);
+        }
+
         list.forEach(s -> {
             System.out.println(s);
         });
