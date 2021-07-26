@@ -22,6 +22,11 @@ public class ListOfMapDemo {
         mapList.add(map);
         mapList.add(map1);
 
+        mapList.forEach(m->{
+            m.forEach((k,v)->{
+                System.out.println(k+" "+v);
+            });
+        });
 
     }
 }
