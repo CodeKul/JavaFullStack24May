@@ -1,32 +1,29 @@
 package jdbc;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
-public class JdbcDemo {
-
+public class JdbcSelect {
     public static void main(String[] args) {
-
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/FullStack4May","root","password");
             Statement statement = connection.createStatement();
 
-            String insert = "insert into student(id,name,address) values(2,'Akash','Nagpur')";
-            String update = "update student set address = 'sangli' where name = 'Akash'";
-            String delete = "delete from student where id =2";
+            String select= "select * from student";
+            ResultSet rs = statement.executeQuery(select);
 
-            int i = statement.executeUpdate(insert);
-            System.out.println("inserting record->"+i);
+            while (rs.next()){
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String address = rs.getString("address");
+                System.out.println(id+" "+name+" "+address);
+            }
+
 
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
-
-
     }
 }
