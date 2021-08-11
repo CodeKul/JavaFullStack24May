@@ -33,3 +33,12 @@ LinkedList(C)
 Vector(C)
  -stack
 
+
+java 8
+
+lambda expression
+default and static keyword in interface
+method references
+stream api
+local date and local time
+optional
